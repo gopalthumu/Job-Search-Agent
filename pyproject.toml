@@ -1,0 +1,21 @@
+[project]
+name = "job-search-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gopal reddy", email = "20pa1a05ho@vishnu.edu.in" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.4.3",
+    "langchain-google-genai>=4.4.0",
+    "langgraph>=1.2.12",
+]
+
+[project.scripts]
+job-search-agent = "job_search_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
